@@ -4,7 +4,7 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace api;
 
-public class PetShopController(PetService petService) : ControllerBase
+public class PetShopController(PetService petService, MyAppOptions optoins) : ControllerBase
 {
 
     [HttpPost(nameof(CreateSellerWithAPetAndReturn))]
